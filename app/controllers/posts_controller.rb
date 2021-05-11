@@ -4,7 +4,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find(parmas[:id])
+    @post = Post.find(params[:id])
   end
 
   def new
@@ -23,6 +23,9 @@ class PostsController < ApplicationController
   end
 
   def destroy
+    post = Post.find(params[:id])
+    post.destroy!
+    redirect_to root_path
   end
 
   def post_params
