@@ -12,5 +12,10 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
+//= require jquery
+//= require jquery_ujs
+//= require turbolinks
+//= require bootstrap
+
 import 'bootstrap/dist/js/bootstrap'
 import '@fortawesome/fontawesome-free/js/all'
