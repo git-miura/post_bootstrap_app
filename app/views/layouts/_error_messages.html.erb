@@ -1,9 +1,9 @@
 <% if @post.errors.any? %>
-  <div>
-    <ul>
-      <% @post.errors.full_messages.each do |msg| %>
-        <li><span style="color: red;"><%= msg %></span></li>
-      <% end %>
-    </ul>
+  <% @post.errors.full_messages.each do |msg| %>
+    <div class="alert alert-dager" role="aleat">
+      <a href="#" class="close" data-dismiss="alert">x</a>
+      <%= msg %></span>
   </div>
+<% end %>
+</div>
 <% end %>
